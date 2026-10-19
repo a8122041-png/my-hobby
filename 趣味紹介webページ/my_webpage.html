@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>My favorite photos</title>
+	<link rel="stylesheet" href="./main.css">
+	<link rel="stylesheet" href="./dist/css/swiper.css">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+	<h1 id="top">My favorite photos</h1>
+	<nav class="menu1">
+		<div class="hamburger">
+		  <span></span>
+		  <span></span>
+		  <span></span>
+		</div>
+		<ul>
+		  <li><a href="#sunset1">ゴンドラと夕日</a></li>
+		  <li><a href="#sunset2">海と夕日</a></li>
+		  <li><a href="#flower1">ネモフィラ</a></li>
+		  <li><a href="#flower2">紫陽花</a></li>
+		  <li><a href="#flower3">緑の紅葉</a></li>
+		  <li><a href="#bench1">イチョウの絨毯</a></li>
+		  <li><a href="#bench2">木漏れ日の中で</a></li>
+		  <li><a href="#uk1">行進</a></li>
+		  <li><a href="#uk2">カラフルな街</a></li>
+		  <li><a href="#uk3">ボートと水面</a></li>
+		</ul>
+	</nav>
+	<div clas="intro">
+	  <div class="profile">
+		<a href="https://www.instagram.com/yui_guitar_0922/"><img src="./image/profile.JPEG"></a>
+	  </div>
+	  <div class="paragraph">
+	    <p>こんにちは！私の趣味は写真を撮ることです。
+		  <br>よく、横浜や旅先で写真を撮っているので、今回はそのいくつかを紹介します！
+		  <br>私の撮った写真をもっと見たいという方はアイコンから私のInstagramをチェック！
+	    </p>
+	  </div>
+	</div>
+	<div class="top-box">
+	  <ul class="menu">
+	    <li><a href="#sunset">Sunset</a>
+		  <ul>
+		    <li><a href="#sunset1">ゴンドラと夕日</a></li>
+		    <li><a href="#sunset2">海と夕日</a></li>
+		  </ul>
+		</li>
+	    <li><a href="#flower">Flower</a>
+		  <ul>
+			<li><a href="#flower1">ネモフィラ</a></li>
+			<li><a href="#flower2">紫陽花</a></li>
+			<li><a href="#flower3">緑の紅葉</a></li>
+		  </ul>
+		</li>
+	    <li><a href="#bench">Bench</a>
+		  <ul>
+			<li><a href="#bench1">イチョウの絨毯</a></li>
+			<li><a href="#bench2">木漏れ日の中で</a></li>
+		  </ul>
+		</li>
+		<li><a href="#uk">UK</a>
+		  <ul>
+			<li><a href="#uk1">行進</a></li>
+			<li><a href="#uk2">カラフルな街</a></li>
+			<li><a href="#uk3">ボートと水面</a></li>
+		  </ul>
+		</li>
+	  </ul>
+	
+	  <div class="swiper-container">
+		  <div class="swiper-wrapper">
+		  <div class="swiper-slide"><img class="ss-image" src="./image/sunset1copy.JPEG" /></div>
+		  <div class="swiper-slide"><img class="ss-image" src="./image/flower2copy.JPEG" /></div>
+		  <div class="swiper-slide"><img class="ss-image" src="./image/bench2copy.JPEG" /></div>
+		  </div>
+		  <div class="swiper-pagination"></div>
+		  <div class="swiper-button-prev"></div>
+		  <div class="swiper-button-next"></div>
+	  </div>
+	</div>
+	<div class="top">TOP</div>
+	<div class="photos">
+	<h2 id="sunset">Sunset</h2>
+	  <h3 id="sunset1">ゴンドラと夕日</h3>
+      <img src="./image/sunset①.jpg" />
+	  <br>
+	  <h3 id="sunset2">海と夕日</h3>
+	  <img src="./image/sunset②.jpg" />
+	<hr />
+	<h2 id="flower">Flower</h2>
+	  <h3 id="flower1">ネモフィラ</h3>
+	  <img src="./image/flower①.jpg" />
+	  <br>
+	  <h3 id="flower2">紫陽花</h3>
+	  <img src="./image/flower②.jpg" />
+	  <br>
+	  <h3 id="flower3">緑の紅葉</h3>
+	  <img src="./image/flower③.JPG">
+	<hr />
+	<h2 id="bench">Bench</h2>
+	  <h3 id="bench1">イチョウの絨毯</h3>
+	  <img src="./image/bench①.jpeg" />
+	  <br>
+	  <h3 id="bench2">木漏れ日の中で</h3>
+	  <img src="./image/bench②.jpg" />
+	<hr />
+	<h2 id="uk">UK</h2>
+	  <h3 id="uk1">行進</h3>
+	  <img src="./image/uk①.JPG" />
+	  <br>
+	  <h3 id="uk2">カラフルな街</h3>
+	  <img src="./image/uk②.JPG" />
+	  <br>
+	  <h3 id="uk3">ボートと水面</h3>
+	  <img src="./image/uk③.JPG" />
+	<hr />
+	</div>
+	
+	
+	<script src="./dist/js/swiper.js"></script>
+    <script>
+      var swiper = new Swiper('.swiper-container', {
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          type: 'bullets',
+          clickable: true,
+        },
+        loop: true,
+        autoplay: {
+          delay: 5000,
+          disableOnInteraction: true
+        },
+        effect: "coverflow",
+        speed: 1500,
+      });
+
+
+	  const pagetop_btn = document.querySelector(".top");
+		pagetop_btn.addEventListener("click", scroll_top);
+		function scroll_top() {
+			window.scroll({ top: 0, behavior: "smooth" });
+		}
+		window.addEventListener("scroll", scroll_event);
+		function scroll_event() {
+			if (window.pageYOffset > 100) {
+				pagetop_btn.style.opacity = "1";
+			} else if (window.pageYOffset < 100) {
+				pagetop_btn.style.opacity = "0";
+			}
+		}
+
+		$(function() {
+			$('.hamburger').click(function() {
+				$('.menu1').toggleClass('open');
+				$(this).toggleClass('active');
+			});
+		});
+    </script>
+  </body>
+</html>
